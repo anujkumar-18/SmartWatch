@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Next-Gen Smartphone</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to right, #0d0d0d, #1a1a1a);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      padding: 20px;
+    }
+
+    .card {
+      background: #000c0d;
+      padding: 30px;
+      border-radius: 20px;
+      max-width: 900px;
+      display: flex;
+      box-shadow: 0 0 25px rgba(0,255,180,0.1);
+      gap: 30px;
+    }
+
+    .image img {
+      width: 300px;
+      border-radius: 15px;
+      box-shadow: 0 0 10px rgba(0,255,200,0.3);
+    }
+
+    .content {
+      flex: 1;
+    }
+
+    .content h1 {
+      font-size: 36px;
+      color: #00ffc8;
+      margin-bottom: 15px;
+    }
+
+    .content ul {
+      list-style: none;
+      margin-bottom: 20px;
+    }
+
+    .content ul li::before {
+      content: "📱 ";
+    }
+
+    .content ul li {
+      margin: 10px 0;
+      font-size: 18px;
+    }
+
+    .price {
+      font-size: 24px;
+      color: #0f0;
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      background: #00ffc8;
+      color: #000506;
+      padding: 12px 25px;
+      border: none;
+      font-size: 18px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #00c6a2;
+    }
+
+    @media (max-width: 768px) {
+      .card {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .image img {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <div class="image">
+      <img src="samsung-galaxy-s24-ultra-896x597.jpg" alt="Next-gen Smartphone">
+    </div>
+    <div class="content">
+      <h1>UltraX Prime Smartphone</h1>
+      <ul>
+        <li>Snapdragon 8 Gen 2 Processor</li>
+        <li>144Hz AMOLED Display</li>
+        <li>108MP Triple AI Camera</li>
+        <li>5000mAh Battery with 120W Charging</li>
+        <li>5G + WiFi 6 + NFC Support</li>
+      </ul>
+      <div class="price">₹39,999 (Introductory Price)</div>
+      <button class="btn">Buy Now</button>
+    </div>
+  </div>
+
+</body>
+</html>

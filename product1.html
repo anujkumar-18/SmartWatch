@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AirSonic Pro HD Earbuds</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to right, #0f0f0f, #1a1a1a);
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 20px;
+      overflow: hidden;
+    }
+
+    /* Video Background */
+    .video-background {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+      opacity: 0.5;
+    }
+
+    .container {
+      max-width: 1000px;
+      background: #222;
+      border-radius: 20px;
+      box-shadow: 0 0 20px rgba(0, 255, 200, 0.2);
+      padding: 40px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+    }
+
+    .image {
+      width: 100%;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 0 15px rgba(0,255,200,0.3);
+    }
+
+    .image img {
+      width: 100%;
+      border-radius: 12px;
+    }
+
+    .content h1 {
+      font-size: 36px;
+      margin-bottom: 20px;
+      color: #00ffc8;
+    }
+
+    .content ul {
+      list-style: none;
+      line-height: 1.8;
+    }
+
+    .content ul li::before {
+      content: "🎧 ";
+    }
+
+    .price {
+      font-size: 24px;
+      margin: 20px 0;
+      color: #0f0;
+    }
+
+    .btn {
+      background: #00ffc8;
+      color: #000;
+      border: none;
+      padding: 12px 24px;
+      font-size: 18px;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #00c6a2;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Video Background -->
+  <video class="video-background" autoplay muted loop>
+    <source src="" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <div class="container">
+    <div class="image">
+      <img src="Earbudes1.png" alt="AirSonic Pro Earbuds">
+    </div>
+    <div class="content">
+      <h1>AirSonic Pro HD Earbuds</h1>
+      <ul>
+        <li>HD Stereo Sound with Deep Bass</li>
+        <li>30H Battery (6H + 24H case)</li>
+        <li>IPX7 Waterproof Design</li>
+        <li>Bluetooth 5.3 – Fast Pairing</li>
+        <li>Dual Mic with ENC for Clear Calls</li>
+        <li>Touch Controls & Type-C Charging</li>
+      </ul>
+      <div class="price">₹2,499 (Limited Offer)</div>
+      <button class="btn">Buy Now</button>
+    </div>
+  </div>
+
+</body>
+</html>
